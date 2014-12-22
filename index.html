@@ -51,13 +51,13 @@ corslite('http://handygeospatial.github.io/geojsonvt-ksj-site/' +
       if (type === 3) ctx.fill('evenodd');
       ctx.stroke();
     }
+  };
   var map = L.map('mapdiv', {
     center: [35.461, 139.603], zoom: 11,
     layers: [std, canvas]});
   var hash = L.hash(map);
   L.control.layers({'地理院タイル（標準地図）': std}, 
     {'canvas': canvas}).addTo(map);
-  };
 }, true);
 </script>
 </body>
