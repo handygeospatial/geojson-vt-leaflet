@@ -26,7 +26,7 @@ var std = L.tileLayer(
 
 var canvas = L.tileLayer.canvas();
 var tileIndex;
-var options = {maxZoom: 4, baseZoom: 14, maxPoints: 100, debug: 1};
+var options = {maxZoom: 4, baseZoom: 18, maxPoints: 100, debug: 1};
 corslite('http://handygeospatial.github.io/geojsonvt-ksj-site/' + 
   'kanagawa_yoto.geojson', function(err, resp) {
   tileIndex = geojsonvt(JSON.parse(resp.response), options);
